@@ -18,14 +18,15 @@ const TopMenu = ({balance}: topMenuInterface) => {
 
     return (
         <div className={'w-full h-full grid grid-cols-6 items-center grid-rows-1 gap-2'}>
-            <div className={'absolute z-[999] w-5  left-2 border-black' + bord}>
-                <div className={'relative w-full h-5'}>
+            <div className={'col-span-1 p-3 border-black'}>
+                <div className={'w-full aspect-square relative'}>
                     <Image
                         src={'/images/burger_icon.svg'}
                         layout={'fill'}
                         alt=""
                     ></Image>
                 </div>
+
                 {menuIsShown ?
                     <div className={'w-full flex justify-center items-center flex-col'}>
                         <div className={'w-8 relative h-8 my-2'} onClick={() => {

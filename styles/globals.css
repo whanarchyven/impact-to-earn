@@ -1,26 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .yellow-purple{
+        background: linear-gradient(90deg, #DFBF4E 0%, #E2BCFF 100%);
+    }
+    .gold{
+        background: linear-gradient(166.72deg, #DFBF4E 8.27%, #E7FF55 91.38%);
+    }
+    .blue-purple{
+        background: linear-gradient(135deg, #5FFFCF 14.65%, #E2BCFF 85.35%);
+    }
+    .bg-gradient{
+        background: linear-gradient(56.59deg, rgba(223, 191, 78, 0.4) 0%, rgba(231, 255, 85, 0.4) 21.53%, rgba(95, 255, 207, 0.4) 69.14%, rgba(226, 188, 255, 0.4) 100%);
+    }
+    .lvl-up{
+        background: linear-gradient(90deg, #3DB5F9 0%, #B8EAFF 100%);
+        box-shadow: -9.36387px 1.87277px 23.4097px #3DE8FF;
+    }
+    .active-el{
+        background: linear-gradient(90deg, #FFC700 0%, #CA84FF 100%);
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body{
+    background: linear-gradient(56.59deg, rgba(223, 191, 78, 0.4) 0%, rgba(231, 255, 85, 0.4) 21.53%, rgba(95, 255, 207, 0.4) 69.14%, rgba(226, 188, 255, 0.4) 100%);
 }

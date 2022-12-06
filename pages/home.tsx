@@ -48,16 +48,18 @@ export default function Home() {
             <div className={'w-64 mt-3'}>
                 <div className={'w-full gap-2 grid grid-cols-8 items-center'}>
                     <p className={'col-span-2'}>Reader</p>
-                    <div className={'col-span-6 h-3 relative flex items-center rounded-full bg-white'}>
-                        <div className={'w-5 absolute left-3/4 aspect-square rounded-full active-el'}></div>
+                    <div className={'col-span-6 h-3 relative flex items-center rounded-full'}>
+                        {/*<div className={'w-5 absolute left-3/4 aspect-square rounded-full active-el'}></div>*/}
+                        <p className={'w-full text-right'}>83/100</p>
                     </div>
                 </div>
             </div>
             <div className={'w-64 mt-3'}>
                 <div className={'w-full gap-2 grid grid-cols-8 items-center'}>
                     <p className={'col-span-2'}>Exp</p>
-                    <div className={'col-span-6 h-3 relative flex items-center rounded-full bg-white'}>
-                        <div className={'w-5 absolute left-1/4 aspect-square rounded-full active-el'}></div>
+                    <div className={'col-span-6 h-3 relative flex items-center rounded-full'}>
+                        {/*<div className={'w-5 absolute left-1/4 aspect-square rounded-full active-el'}></div>*/}
+                        <p className={'w-full text-right'}>180/600</p>
                     </div>
                 </div>
             </div>
